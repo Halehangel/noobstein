@@ -1,0 +1,262 @@
+@media only screen and (max-width : 480px) {
+	body{
+		background-image:url(http://pakihinho.gimn-popovo.com/images/NBG.jpg);
+		background-size:auto;
+		background-attachment:fixed;
+		background-repeat:no-repeat;
+		cursor:url(http://pakihinho.gimn-popovo.com/images/triangleCursor.png),auto;
+	}
+	/*
+	===========================================
+	Inside pages
+	===========================================
+	*/
+	.page-wrap {
+	  min-height: 100%;
+	  width:100%;
+	  margin-bottom: -120px;
+	}
+	.page-wrap:after {
+	  content: "";
+	  display: block;
+	}
+	.site-footer, .page-wrap:after {
+	  min-height: 420px;
+	}
+	.site-footer {
+		width:90%;
+		padding-left: 5%;
+		padding-right:5%;
+	}
+	.calendarThumb{
+		width:100%;
+		display:none;
+	}
+	.loreBox{
+		position:relative;
+		left:0%;
+		width:89.5%;
+		padding-left:5%;
+		padding-right:5%;
+		min-height:500px;
+		border-radius:0px;
+	}
+	#navigation{
+		position:relative;
+		left:0%;
+		width: 96%;
+		right:0%;
+		height: 500px;
+		padding-left: 2%;
+		padding-right: 2%;
+		border-radius:0px;
+		margin-bottom:-160px;
+	}
+	.nav{
+		float:none;
+	}
+	ul.navBox{
+		left:0;
+		right:0;
+		width:100%;
+	}
+	hr.orangeResponsive{
+		position:relative;
+		border:0;
+		height:3px;
+		background-color:#ff6f00;
+		display:block;
+	}
+	hr.orange{
+		position:relative;
+	}
+	.footColumnRight{
+	float:none;
+	width: 100%;
+	font-family:ptm;
+	color:#ffb400;
+	text-decoration:none;
+	}
+	.footColumnLeft{
+	float:none;
+	width: 100%;
+	font-family:ptm;
+	color:#ffb400;
+	text-decoration:none;
+	display:block!important;
+	}
+	/*
+	===========================================
+	Login Page
+	===========================================
+	*/
+	#loginBar{
+	position:relative;
+	top:0%;
+	left:0%;
+	width:90%;
+	padding-left:5%;
+	padding-right:5%;
+	padding-bottom:120px;
+	padding-top:60px;
+	border-radius:0px;
+	}
+	/*
+	===========================================
+	Register page
+	===========================================
+	*/
+	#registerBar{
+	position:relative;
+	top:0%;
+	left:0%;
+	width:90%;
+	padding-left:5%;
+	padding-right:5%;
+	padding-bottom:120px;
+	padding-top:60px;
+	border-radius:0px;
+	}
+	#infoBar{
+	position:relative;
+	left:0%;
+	width:89.5%;
+	padding:5%;
+	min-height:500px;
+	}
+	#arrow{
+	display:none;
+	}
+	/*
+	===========================================
+	admin
+	===========================================
+	*/
+	.loreBoxAdmin{
+		position:relative;
+		left:0%;
+		transform:translateX(0);
+		width:89.5%;
+		padding-left:5%;
+		padding-right:5%;
+		min-height:500px;
+		border-radius:0px
+	}
+	#logo{
+		left:50%;
+		transform:translateX(-50%);
+	}
+	/*
+	===========================================
+	ads
+	===========================================
+	*/
+	.adWindow{
+		position:relative;
+		left:-11.3%;
+		width:98.5%;
+		height:300px;
+		padding-top:2%;
+		padding-left:12%;
+		padding-right:12%;
+		padding-bottom:4%;
+		color:black;
+		display:block;
+		transition:background-color 0.7s ease-in-out;
+		border-top:solid 1px rgba(255,190,0,0.2);
+	}
+	.adWindow .adWindowPicTest{
+		position:relative;
+		width:100%;
+		height:60%;
+		margin-bottom:36px;
+		background-size:cover;
+		background-position:center;
+		display:inline-block;
+	}
+	.description{
+		display:block;
+		float:none;
+		text-align:center;
+		width:100%;
+	}
+	.adWindow .adTitle{
+		position:relative;
+		left:0;
+		right:0;
+		width:100%;
+		text-align:center; 
+		word-wrap:break-word;
+		float:none;
+	}
+	.adWindow h4.adCategory{
+		position:relative;
+		background-color: rgba(0,0,0,0.8);
+		border-radius:2px;
+		float:right;
+		padding-top:4px;
+		padding-bottom:4px;
+		padding-left:7px;
+		padding-right:7px;
+		color:white;
+		text-align:right;
+		display:none;
+	}
+	/*
+	===========================================
+	view ad
+	===========================================
+	*/
+	img.adPic{
+		width:100%;
+		max-width: 100%;
+		max-height:200%;
+		height:auto;
+		margin-bottom:40px;
+		display:inline-block;
+	}
+	.adSubject{
+		position:relative;
+		display:block;
+		text-align:center;
+		float:inherit;
+		width:100%;
+	}
+	.viewLine{
+	height:auto;
+	}
+	.modalDialogBox {
+		margin-top:0;
+		width: 90%;
+		padding-left:5%;
+		padding-right:5%;
+		overflow: scroll;
+	}
+	/*
+	===========================================
+	admin panel
+	===========================================
+	*/
+	.lineUsers{
+		position:relative;
+		right:0%;
+		left:0%;
+		height:50px;
+		width:100%;
+		padding-left:5%;
+		padding-right:5%;
+		padding-bottom:6%;
+		padding-top:4%;
+		border-bottom:3px #ff6f00 solid;
+	}
+	.lineTitle {
+		position:relative;
+		display:inline-table;
+		width:auto;
+		word-wrap: break-word;
+		max-width:60ch;
+	}
+}
+@media only screen and (max-width : 1024px) {
+
+}
