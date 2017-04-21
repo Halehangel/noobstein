@@ -21,6 +21,7 @@
 		<link rel="stylesheet" href="../css/style.css" type="text/css" />
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.11/slideout.min.js"></script>
 		<script type='text/javascript' src='../js/functions.js'></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	</head>
@@ -30,7 +31,7 @@
 			function AddSubNav($nav_smth, $value='title.php', $conn, $id_user)
 			{
 				if ($nav_smth[1] != NULL)
-				{	
+				{
 					//Adding the dropdown-content
 					$nav_str .= "<div class='dropdown-content' style='color:black;' onmouseover='HideFragmentLeft();' onmouseout='RevealFragmentLeft();'>";
 					$nav_str .= "<a class='title' href='" . $value . "'>" . str_replace('.php', '', ucfirst($value)) . "</a>";
@@ -61,8 +62,8 @@
 				return $nav_str;
 			}#End of SubNav function
 
-			if ($status == 0) {
-
+			if ($status == 0) 
+			{
 				//Should make an url connected menu color changer type of thingie...
 
 				$nav_array = array(
@@ -159,10 +160,6 @@
 					}
 					unset($nav_smth);
 				}
-
-
-
-
 		?>
 			<div id="id01" class="modal">
 				<form class="modal-content animate" action="check_login.php" method="POST">
@@ -189,7 +186,21 @@
 					</div>
 				</form>
 			</div>
-			
+
+			<div class="responsive-menu">
+					<nav id="rMenu" class="menu" onmouseleave='HideMenu()'>
+						<ul class="navBoxResponsive">
+							<li class="nav"> <a href="../index.php">Home</a></li>
+							<li class="nav"><a href="login.php">Login</a></li>
+							<li class="nav"><a href="games.php">Games</a></li>
+							<li class="nav"><a href="register.php">Register</a></li>
+						</ul>
+				    </nav>
+
+					<div class="panel" id="panel">
+						<h1><a class="toggle-button" onclick="ShowMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a>Noobstein</h1>
+					</div>
+			</div>
 		<?php
 			} elseif($status == 1) {
 				$nav_array = array(
@@ -297,7 +308,34 @@
 								<button class='no-styling logout' type='submit' name='submit_logout' value='submit_logout'><i class='fa fa-sign-out fa-nav'></i></button>
 							</form>
 						</li>";
-				
+			?>
+				<div class="responsive-menu">
+						<nav id="rMenu" class="menu" onmouseleave='HideMenu()'>
+							<ul class="navBoxResponsive">
+								<li class="nav"> <a href="../index.php">Home</a></li>
+								<li class="nav"><a href="dashboard.php">Dashboard</a></li>
+								<li class="nav"><a href="previous.php">Previous</a></li>
+								<li class="nav"><a href="games.php">Games</a></li>
+								<li class="nav"><a href="settings.php">Settings</a></li>
+								<li class="nav"><a href="change_password.php">Change Password</a></li>
+								<li class="nav"><a href="noobies.php">Noobies</a></li>
+								<li class="nav"><a href="funds_analysis.php">Funds & Analysis</a></li>
+								<li class="nav"><a href="social.php">Social</a></li>
+								<li class="nav"><a href="friends.php">Friends</a></li>
+								<li class="nav"><a href="notifications.php">Notifications</a></li>
+								<li class="nav"><a>
+									<form method='POST' style="display: block; position: relative; top: 70px; left: 5px; font-weight: 900 !important;">
+										<button class='no-styling logout' type='submit' name='submit_logout' value='submit_logout'>Log out</button>
+									</form>
+								</a></li>
+							</ul>
+					    </nav>
+
+						<div class="panel" id="panel">
+							<h1><a class="toggle-button" onclick="ShowMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a>Noobstein</h1>
+						</div>
+				</div>
+			<?php
 			} 
 			elseif($status == 2) 
 			{
@@ -387,6 +425,29 @@
 								<button class='no-styling logout' type='submit' name='submit_logout' value='submit_logout'><i class='fa fa-sign-out fa-nav'></i></button>
 							</form>
 						</li>";
+
+			?>
+			<div class="responsive-menu">
+						<nav id="rMenu" class="menu" onmouseleave='HideMenu()'>
+							<ul class="navBoxResponsive">
+								<li class="nav"> <a href="../index.php">Home</a></li>
+								<li class="nav"><a href="games.php">Games</a></li>
+								<li class="nav"><a href="settings.php">Settings</a></li>
+								<li class="nav"><a href="user_permissions.php">User Permissions</a></li>
+								<li class="nav"><a href="friends.php">Friends</a></li>
+								<li class="nav"><a>
+									<form method='POST' style="display: block; position: relative; top: 70px; left: 5px; font-weight: 900 !important;">
+										<button class='no-styling logout' type='submit' name='submit_logout' value='submit_logout'>Log out</button>
+									</form>
+								</a></li>
+							</ul>
+					    </nav>
+
+						<div class="panel" id="panel">
+							<h1><a class="toggle-button" onclick="ShowMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a>Noobstein</h1>
+						</div>
+				</div>
+			<?php
 			}
 
 			$nav .= "</ul></div></div>";
